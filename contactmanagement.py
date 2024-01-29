@@ -45,7 +45,11 @@ def fetch():
     
 # ===== def Exit =====
 def exit():
-    root.destroy()
+    mbox = messagebox.askyesno(title="Exit",message="Do you want to exit the program?")
+    if mbox == True:
+        root.destroy()
+    else:
+        pass
 
     
 
